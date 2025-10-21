@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="sv">
+   <head>
+      <meta charset="UTF-8">
+      <title>Café Blå Lagunen</title> 
+      <style>
+      /* Element 1: body::before använde jag så att de kunde skpas en ljus bakgrund runt hela webbplatsen */
+         body::before { 
+            content:"";
+            position: fixed;
+            background: rgba(244, 226, 153, 0.7);
+            inset: 0;
+            z-index: -1;
+         }
+      /* Element 2: body i detta stycke använda jag till själva bakgrunden där webbplatsen är fyld av kaffekoppar och muffins. (Denna bild är AI genererad) */
+      body {
+         background-image: url(Image/Coffy2.jpg); /* Denna bilden var royalty free */
+         background-position: top left;
+         background-attachment: scroll; 
+         background-color:rgb(243, 229, 171);
+         color: #333333;
+         font-family:Arial, sans-serif;
+         text-align: center;
+      }
+      /* Element 3: h1 använde jag till de första huvudstycket och jag gjorde denna i en brun fär som skulle passa själva webbsidan */
+      h1 {
+         color:#6b4f2c;
+      }
+      /* Element 4: gör själva bildernas hörnor mera runda med 10 pixlar radie */
+      img {
+         border-radius: 10px;   
+      }
+      /* Element 5: link box använder jag för själva knappparna runt om oss, meny och kontakta oss*/
+      .link-box {
+         background-color: #f4d6a2;
+         border: 2px solid #b5835a;
+         border-radius: 10px;
+         padding: 10px 20px;
+         color: #3b2d1f;
+         text-decoration: none;
+         font-weight: bold;
+         box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+         margin-right: 20px;
+      }
+      /* Element 6: blue text använde jag så att titlen på webbplatsen café blå lagunen blev i en blå färg */
+      .blue-text {
+         color: rgb(2, 119, 158);
+      }
+      /* Element 7: link box:hover gör så att när muspekaren är på en av ruturna så ändra de fär till lite ljusare gul så at man vet vilken knapp de är man klickar på  */
+      .link-box:hover {
+         background-color: #f0c67a;
+         transform: scale(1.05);
+      }
+      </style>
+   </head>
+   <body> 
+   <!-- Element 8: P användes för att hoppa ner ett stycke altså gör de så att texten för en radbrytning  -->
+      <h1 class="blue-text">Café Blå Lagunen</h1> 
+      <p> <a href="https://swplayground.ltu.se/d0015d/ginlin4/om%20oss.html" class="link-box">Om oss</a>
+       
+      <a href="" class="link-box">Meny</a>
+      <!-- Element 9: a anvnds för själva länken medans class används för själva stylingen altså runda hörnen, färgerna osv av knappparna med jälp av CSS -->
+      <a href="" class="link-box">Kontakta oss</a>
+      </p> 
+      <img src="Image/Cae.jpg" alt="A pic" width="400"> 
+      
+   <!-- Element 10: strong används för att fetmarkera själva texten på rubriken  -->
+      <p><strong>Välkommen till Café Blå Lagunen</strong></p>
+      <p>
+      En inbjudande plats där du kan koppla av och njuta av <br>
+      våra unika bakelser med en kopp kaffe av högsta kvalitet i en <br>
+      mysig och avslappnad atmosfär
+      </p>
+   </body> 
+</html>

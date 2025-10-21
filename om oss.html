@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="sv">
+   <head>
+      <meta charset="UTF-8">
+      <title>Café Blål Lagunen</title>
+      <style>
+      /* Element 1: body::before använde jag så att det kunde skpas en ljus bakgrund runt hela webbplatsen */
+         body::before{
+            content:"";
+            position: fixed;
+            background: rgba(255, 245, 207, 0.7);
+            inset: 0;
+            z-index: -1;
+         }
+      /* Element 2: body i detta stycke använde jag till själva bakgrunden där webbplatsen är fylld av kaffekoppar och muffins. (Denna bild är AI-genererad) */
+       body {
+         background-image: url(Image/Coffy2.jpg);
+         background-position: center;
+         background-attachment: scroll; 
+         background-color:rgb(241, 232, 194);
+         color: #333333;
+         font-family:arial, sans-serif;
+         text-align: center;
+         margin-top: 20px;
+      }
+      /* Element 3: h1 använde jag till den första huvudrubriken och jag gjorde denna i en brun färg som skulle passa själva webbsidan */
+      h1 {
+         color:#6b4f2c;
+      }
+      /*Element 4: Content används till den halvgenomskinliga bakgrunden bakom själva texten som gör den lättar att läsa och se */
+      .content {
+        background-color: rgba(255, 255, 255, 0.7);
+        text-align: center;
+        margin-top: 20px;
+        padding: 30px;
+        border-radius: 15px;
+        width: 80%;
+        max-width: 800px;
+        margin: 20px auto 0 auto;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        text-align: center;
+      }
+      /* Element 5: gör själva bildernas hörnor rundare med en radie på 10 pixlar */ 
+      img {
+         border-radius: 10px;
+         
+      }
+      /* Element 6: content h2 sekundära rubriken och själva texten flyttas till vänster så att det ser bättre ut och går lättare att läsa  */
+      .content h2 {
+         text-align: left;
+         margin-top: 40px;
+         margin-bottom: 20px;
+      }
+        /* Element 7: content p justerar själva texten och flyttar den till vänster med mindre marginal*/
+      .content p {
+         text-align: left;
+         margin-bottom: 15px;
+      }
+  /* Element 8: left används för att vänsterjustera texten ytterligare där det behövs */
+      .left {
+         text-align: left;
+      }
+       /* Element 9: blue text använde jag så att titlen på webbplatsen café blå lagunen blev i en blå färg */
+      .blue-text {
+         color: rgb(2, 119, 158);
+      }
+
+      </style>
+   </head>
+<body>
+    <!-- Element 10: div användes för att padding, inehåll, rundade hörn, skuggning samt centrerad layout ska fungera  -->
+    <div class="content">
+    <!-- Elemnet 11 h1 är till för att skapa rubrik 1 samt left är till för att justera så att texten hamar åt vänster -->
+      <h1>Om oss</h1> 
+       <h1 class="left"><strong>Ägaren</strong></h1>
+ <!-- Element 12: p används för att hoppa ner ett stycke alltså gör de så att texten får en radbrytning  -->
+  <p>
+ <!-- Element 13: a används för själva länken medan class används för själva stylingen alltså runda hörnen, färgerna osv av knapparna med hjälp av CSS -->    
+    <img src="Image/Gino_Linetti2.jpg" alt="A pic" width="200"> 
+    <h2 class="left">Gino Linetti</h2> 
+    
+    <p>
+       Jag, Gino är 23 år gammal och studerar i dagsläget på masterprogrammet i International Business på LTU.<br>
+       Är idag ägaren av Café Blå Lagunen, som kommer befinna sig nära centrum i stan. Jag tar även några 
+       kurser i webbutveckling på LTU så att jag kan lära mig skapa hemsidor genom HTML, något jag nämligen är<br> 
+       väldigt intresserad av.
+    </p>
+
+    <p>
+        Jag har skapat Blå Lagunen från grunden och det är ett projekt jag är väldigt nöjd över. På min fritid<br>
+        tycker jag om att gå långa promenader i naturen, spela spel (såsom Persona 4 och 5, Danganronpa,<br>
+        Baldur's Gate 3, Balatro med mera), laga mat/baka och gör gärna saker spontant då jag sällan sitter still.<p>
+       </p>
+       <p>
+       Jag kommer ursprungligen ifrån Italien, specifikt från Bari som ligger cirka vid hälen av själva klacken,
+       om man föreställer sig att Italien ser ut som en stövel, cirka här:<br>
+       <img src="Image/Italy.jpg" alt="A pic" width="200"> </p>
+       
+       <p>
+      Här har ni en annan av mina familjemedlemar nämligen min katt Figaro som precis börjat spinna för fult här bredvid mig
+      och påminner mig om att det är dags att servera kvällsmat så fortsättning följer... och nej han är inte fet.
+      Det här är nämligen hans viterskrud!<br>
+      <img src="Image/Cat_pic.jpg" alt=" Cat" width="200"> 
+   </p>
+</div>
+</body>
+</html>
